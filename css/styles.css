@@ -1,0 +1,29 @@
+body {
+  font-family: "Fredoka One", cursive;
+}
+.pokemons__container {
+  max-width: 1200px;
+}
+
+.pokemon__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pokemon__item {
+  width: 25%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.pokemon__img {
+  width: 150px;
+  object-fit: contain;
+}
