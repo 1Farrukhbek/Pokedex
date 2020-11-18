@@ -9,8 +9,14 @@ pokemons.forEach(function (pokemon) {
     pokemonImg.setAttribute('height', '150');
     
     var pokemonName = createElement('h4', 'pokemon_info text-center', pokemon.name);
+    var pokemonType = createElement('p', 'pokemon_info text-center m-0', pokemon.type.join(', '));
+    var pokemonWeight = createElement('p', 'pokemon_info text-center m-0', pokemon.weight);
+    var pokemonHeight = createElement('p', 'pokemon_info text-center', pokemon.height);
     
     pokemonsItem.appendChild(pokemonImg);
     pokemonsItem.appendChild(pokemonName); 
+    pokemonsItem.appendChild(pokemonType); 
+    pokemonsItem.appendChild(pokemonWeight); 
+    pokemonsItem.appendChild(pokemonHeight); 
     elBasicContent.appendChild(pokemonsItem);
 }); 
